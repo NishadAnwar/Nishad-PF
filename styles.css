@@ -1,0 +1,357 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@100&display=swap');
+
+
+*
+{
+      margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #081b29;
+    color:white;
+    background-image:url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    motion: none;
+}
+.header
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: purple;
+    background: scroll;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+    backdrop-filter: blur(5px);
+
+}
+.logo
+{
+   font-size: 40px;
+   color:white ;
+   text-decoration: none;
+   font-weight: 600;  
+   transition: .3s;
+   background-color;
+   text-shadow: 2px 2px 5px rgba(0, 255, 119, 0.916);
+}
+
+.navbar a
+{
+    font-size: 25px;
+    color: white;
+    margin-left: 35px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+   
+    border-radius: 10px;
+}
+.navbar a:hover,
+ .navbar a.Active
+{
+    color: palegreen;
+}
+
+.home
+{
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10%;
+    align-content:center;
+    
+}
+.pic
+{ 
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 100%;
+    float: right;
+    background-position: 2ch;
+    
+
+}
+.pic img{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    border: 5p;
+    box-shadow: 0 0 200px rgb(176, 174, 174) ;
+}
+
+.homecontent
+{
+    margin-left: 200px;
+    background-color: b;
+    opacity: 0.8;
+    
+}
+.homecontent h1{
+    font-size: 56px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px palegreen;
+}
+
+.homecontent h3
+{
+    font-size: 32px;
+    font-weight: 700;
+    color: palegreen;
+    display: inline-block;
+    text-shadow: 2px 2px 5px white;
+    flex-direction: column;
+}
+
+.homecontent p
+{
+    font-size: 16px;
+}
+
+.homecontent .btnbox
+{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px; 
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20%;
+}
+
+.btnbox a
+{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: palegreen;
+    border: 2px solid palegreen;
+    border-radius: 200px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btnbox a:hover
+{
+    color: palegreen ;
+}
+
+.btnbox a:nth-child(2)
+{
+  background: transparent;
+  color: palegreen;
+}
+.btnbox a:nth-child(2)::before
+{
+    background:palegreen ;
+}
+
+.btnbox a:nth-child(2):hover
+{
+    color: black;
+}
+
+
+.btnbox a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:black;
+    z-index: -1;
+    transition: .1s;
+}
+
+.btnbox a:hover::before
+{
+width: 100%;
+
+}
+
+#about
+{
+    position:
+    padding: 50px;
+}
+
+
+
+.ab1
+{
+background-color: rgba(14, 20, 21, 0.856);
+    color: white;
+}
+
+
+@media screen and (max-width:1040px){
+    .home{
+        flex-direction: column;
+    }
+    .pic{
+        height: 500px;
+        margin-top: 35%;
+    }
+    .homecontent h1
+    {
+        font-size: 35px
+    }
+    .homecontent  h3
+    {
+        font-size: 20px;
+    }
+    .content{
+        font-size: 20px;
+        flex-direction: column;
+    }
+    .subtitle
+    {
+        margin-right: 10%;
+    }
+}
+
+.content
+{
+    backgrou;
+}
+
+.social-icons i
+{
+    color: antiquewhite;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px; 
+    font-size: 30px;   
+    transition: transform 0.5s;
+}
+
+.social-icons i:hover
+{
+    color: palegreen;
+    transform:translatey(-5px);
+}
+
+.skillheading
+{
+    font-size: 50px;
+    text-align: center;
+    color: palegreen;
+    text-align: center;
+    position: relative;
+    padding: ;
+}
+
+.skillcontent li
+{
+    text-align: center;
+    font-size: 25px;
+}
+.sk1
+{
+    
+    padding: 50px;
+}
+
+.sk1
+{
+  
+}
+.contactleft
+{
+    margin-top: 10%;
+    margin-bottom: 20%;
+    text-align: right;
+    padding: 30px;
+}
+
+.contactleft h1{
+    color: palegreen;
+    align-items: center;
+}
+
+
+.content
+{
+    text-align:left ;
+    font-size: 25px;
+    margin-top: 20%;
+    width: 700px;
+    background-color: transparent;
+    color: white;
+}
+
+.envobU cavalier
+{
+    text-align: right;
+    padding: 500px;
+}
+
+.icons
+{
+    align-items: center;
+    margin-left: 500px;
+}
+
+.icons i
+{
+    color: antiquewhite;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px; 
+    font-size: 30px;   
+    transition: transform 0.5s;
+
+}
+
+.icons i:hover
+{
+    color: palegreen;
+    transform:translatey(-5px);
+}
+
+.subtitle
+{
+    text-align: end;
+    padding-right: 20%;
+}
+
+.contactleft h2
+{
+    text-align: ;
+    padding-left: 50%;
+}
+
+.contactleft h3
+{
+    text-align: center;
+    padding-left: 36%;   
+}
+.copyright
+{
+    text-align: center;
+    margin-bottom: 2%;
+}
